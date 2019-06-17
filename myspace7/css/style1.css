@@ -1,0 +1,185 @@
+       /* div {
+            display: block;
+        } */
+
+       div#header_top {
+           width: 100%;
+           height: 100px;
+           text-align: right;
+       }
+
+       div#header_top img#img1 {
+           position: absolute;
+           left: 20px;
+           top: 30px;
+       }
+
+       div#header_top img#img1:hover {
+           opacity: 0.5;
+       }
+
+       div#header_top ul {
+           margin: 0;
+       }
+
+       div#header_top ul li {
+           display: inline-block;
+           margin-right: 10px;
+       }
+
+       div#header_top ul li:first-child {
+           border-right: 1px solid #BDBDBD;
+       }
+
+       div#headerright ul li#country {
+           margin-right: 50px;
+       }
+
+       div#header_top ul li p {
+           display: inline-block;
+           margin-right: 10px;
+       }
+
+       div#headerright {
+           display: block;
+           margin: 0px;
+           padding: 0px 10px 0px 0px;
+           overflow: hidden;
+           line-height: 0;
+       }
+
+       div#headerright ul li input#img2 {
+           vertical-align: -9px;
+       }
+
+       a#caution {
+           padding-left: 20px;
+           padding-right: 20px;
+           text-decoration: none;
+           color: #ffffff;
+           background: #B40404;
+       }
+
+       ul.navi {
+           padding: 0;
+           width: 900px;
+           margin: 0 auto;
+           margin-bottom: 30px;
+       }
+
+       ul.navi li.navi:first-child {
+           border-left: inset 1px #ffffff;
+       }
+
+       ul.navi li.navi {
+           list-style: none;
+           /* background: orangered; */
+           display: inline;
+           padding: 10px;
+           border-right: inset 1px #BDBDBD;
+       }
+
+       ul.navi li.navi:hover {
+           background: gray;
+       }
+
+       ul.navi li.navi>a {
+           text-decoration: none;
+           padding: 30px;
+           width: 150px;
+       }
+
+       div#important {
+           display: block;
+           width: 100%;
+           padding: 0 8px 0 8px;
+           max-width: calc(980px + 16px);
+           margin: 0 auto;
+       }
+
+       div#caution {
+           padding-left: 20px;
+           padding-right: 20px;
+           border: 1px solid #B40404;
+       }
+
+       div#caution p {
+           margin: 7px;
+       }
+
+       div#caution p#caution1 {
+           margin-bottom: 0;
+       }
+
+       div#caution p#caution2 {
+           margin-top: 0;
+           margin-bottom: 20px;
+       }
+       /* ナビの最後の企業情報 */
+
+       ul.navi li a.text {
+           position: relative;
+       }
+
+       ul.navi li img.gazou {
+           display: none;
+           position: absolute;
+           background: blue;
+           top: 80px;
+           left: -300px;
+           padding: 16px;
+           z-index: 1;
+       }
+
+       a.text:hover+img.gazou {
+           display: block;
+       }
+ 
+
+
+       /* ナビゲーションバーをホバーしたときの挙動 */
+       .navi {
+           position: relative;
+       }
+
+       .navi .subs {
+           z-index: 2;
+           visibility: hidden;
+           background: #797168;
+           position: absolute;
+           width: 600px;
+           top: 100%;
+           left: 0px;
+           padding: 15px;
+       }
+
+       ul.navi li:hover .subs {
+           visibility: visible;
+       }
+
+       ul.subs li {
+           display: block;
+           float: left;
+           width: 190px;
+           left: 0;
+       }
+
+       ul.subs li,
+       ul.subs li ul,
+       ul.subs li ul li {
+           border: none;
+           padding: 0;
+           text-align: center;
+       }
+
+       ul.subs li p {
+           font-size: 20px;
+           color: #fff;
+       }
+
+       li.navi .col1,
+       li.navi .col2,
+       li.navi .col3,
+       li.navi .col4 {
+           width: 200px;
+       }

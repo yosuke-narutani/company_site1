@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<header>
+    <meta charset="utf-8" />
+    <!-- jQuery可能 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- angular可能 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style1.css">
+
+    <link rel="stylesheet" href="../css/style2.css">
+
+    <style type="text/css">
+
+    </style>
+
+</header>
+
+<body ng-controller="myCtrl">
+    <div id="header_top">
+        <a href="">
+            <img src="../img/logo1.jpg" alt="rogo" width="100" height="40" id="img1">
+            <br>
+        </a>
+
+        <div id="headerright">
+            <ul>
+                <li>
+                    <p>{{selectedCountry}}</p>&nbsp;</li>
+                <li id="country">
+                    <select ng-model="selectedCountry" ng-options="country for country in countries"></select>
+                </li>
+                <li>
+                    <form method="get" action="">
+                        <input type="search" placeholder="検索">
+                </li>
+                <li>
+                    <input type="image" src="../img/search1.png" width="27" height="27" id="img2">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ナビゲーションバー -->
+    <ul class="navi">
+        <li class="navi">
+            <a href="">コンテンツ</a>
+            <ul class="subs">
+                <li>
+                    <p>コンテンツ1</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>コンテンツ2</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>コンテンツ3</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li class="navi">
+            <a href="">サービス</a>
+            <ul class="subs col1">
+                <li>
+                    <p>コンテンツ1</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li class="navi">
+            <a href="">業種/業務</a>
+            <ul class="subs col2">
+                <li>
+                    <p>コンテンツ1</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="navi">
+            <a href="">製品</a>
+            <ul class="subs col3">
+                <li>
+                    <p>コンテンツ1</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="navi">
+            <a href="">サポート</a>
+            <ul class="subs col4">
+                <li>
+                    <p>コンテンツ1</p>
+                    <ul>
+                        <li>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <a href="">4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="navi">
+            <a href="" class="text">企業情報</a>
+            <img src="../img/image1.jpg" alt="" class="gazou">
+        </li>
+    </ul>
+
+    <!-- お知らせ -->
+    <div id="important">
+        <a href="" id="caution">企業からのお知らせ</a>
+        <div id="caution">
+            <p id="caution1">⚠ &nbsp～～～～～～～～～～～～のお願い（20××年××月××日）</p>
+            <p id="caution2">&nbsp&nbsp&nbsp&nbsp至急、対象製品に該当するかご確認ください。 詳しくはこちら</p>
+            <p>⚠ &nbsp～～～～～～～～にご注意ください（20××年××月××日）</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="img1">
+        <img src="../img/img2.png">
+        <a href="">
+            <p>企業名</p>
+        </a>
+    </div>
+    <br>
+    <br>
+
+    <hr class="img1">
+
+    <ul class="itemBox">
+        <li class="itemBox2">
+            <img src="../img/image1.jpg" width=100%>
+            <p>画像情報１</p>
+            <div class="itemBoxCaption">画像１
+                <br>画像内容
+            </div>
+        </li>
+        <li class="itemBox2">
+            <img src="../img/image2.JPG" width=100%>
+            <p>画像情報２</p>
+            <div class="itemBoxCaption">画像２
+                <br>画像内容
+            </div>
+        </li>
+        <li class="itemBox2">
+            <img src="../img/image3.jpg" width=100%>
+            <p>画像情報３</p>
+            <div class="itemBoxCaption">画像３
+                <br>画像内容
+            </div>
+        </li>
+        <li class="itemBox2">
+            <img src="../img/image4.JPG" width=100%>
+            <p>画像情報４</p>
+            <div class="itemBoxCaption">画像４
+                <br>画像内容
+            </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+    <div class="another_contents">
+        <h1>別コンテンツ</h1>
+        <ul>
+            <li>
+                <img src="../img/image2.JPG">
+            </li>
+            <li>
+                <img src="../img/image3.jpg">
+            </li>
+            <li>
+                <img src="../img/image4.JPG">
+            </li>
+
+        </ul>
+    </div>
+
+
+
+    <footer>
+
+        <h1>フッター部分</h1>
+        <div class="footer">
+            <p>大項目１</p>
+            <ul>
+                <li>
+                    <a href="">項目１</a>
+                </li>
+                <li>
+                    <a href="">項目２</a>
+                </li>
+                <li>
+                    <a href="">項目３</a>
+                </li>
+                <li>
+                    <a href="">項目４</a>
+                </li>
+                <li>
+                    <a href="">項目５</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>大項目２</p>
+            <ul>
+                <li>
+                    <a href="">項目１</a>
+                </li>
+                <li>
+                    <a href="">項目２</a>
+                </li>
+                <li>
+                    <a href="">項目３</a>
+                </li>
+                <li>
+                    <a href="">項目４</a>
+                </li>
+                <li>
+                    <a href="">項目５</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>大項目３</p>
+            <ul>
+                <li>
+                    <a href="">項目１</a>
+                </li>
+                <li>
+                    <a href="">項目２</a>
+                </li>
+                <li>
+                    <a href="">項目３</a>
+                </li>
+                <li>
+                    <a href="">項目４</a>
+                </li>
+                <li>
+                    <a href="">項目５</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>大項目４</p>
+            <ul>
+                <li>
+                    <a href="">項目１</a>
+                </li>
+                <li>
+                    <a href="">項目２</a>
+                </li>
+                <li>
+                    <a href="">項目３</a>
+                </li>
+                <li>
+                    <a href="">項目４</a>
+                </li>
+                <li>
+                    <a href="">項目５</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>大項目５</p>
+            <ul>
+                <li>
+                    <a href="">項目１</a>
+                </li>
+                <li>
+                    <a href="">項目２</a>
+                </li>
+                <li>
+                    <a href="">項目３</a>
+                </li>
+                <li>
+                    <a href="">項目４</a>
+                </li>
+                <li>
+                    <a href="">項目５</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="copylight">
+        <p>Copylight</p>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="../js/angular1.js"></script>
+</body>
+
+</html>
